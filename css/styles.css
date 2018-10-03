@@ -19,7 +19,7 @@ body {
 
 section#hero {
   background-image:url('../img/chairs-behind.jpg');
-  height: 725px;
+  height: 775px;
   position: relative;
   opacity: 0.80;
   background-position: center;
@@ -28,34 +28,29 @@ section#hero {
   background-attachment: fixed;
 }
 
-#hero h1{
-  font-size: 2em;
-  text-align: center;
-  border: 5px solid #fff;
-  display: inline;
-}
-
-#hero p {
-  color: #000;
-}
-
 section#hero div.title {
   position: absolute;
   top: 40%;
   width: 100%;
   text-align: center;
-
 }
 
 section#hero div.title h1 {
   color: #fff;
   padding: 18px;
-  font-size: 50px;
   letter-spacing: 10px;
+  font-size: 3.5em;
+  text-align: center;
+  border: 5px solid #fff;
+  display: inline;
 }
 
 section#about {
   margin: 2em 0;
+}
+
+section#about .about-right {
+  padding-top: 4.5em;;
 }
 
 section#about div.about-left img {
@@ -78,6 +73,11 @@ section#gallery img {
 #testimonial .container h3{
   font-size: 3em;
   color: #000;
+}
+
+section#testimonial p {
+  font-size: 1.5em;
+  padding-top: 1em;
 }
 
 
@@ -104,24 +104,49 @@ footer{
 }
 
 
+@media (max-width: 900px) {
+  section#hero div.title h1 {
+    color: #fff;
+    padding: .5em;
+    letter-spacing: 10px;
+    font-size: 2em;
+    text-align: center;
+    border: 5px solid #fff;
+    display: inline;
+  }
+}
+
 @media (max-width: 600px) {
-  #hero h1{
-    font-size: 10em;
-    width: 100%;
+  section#hero {
+    background-image:url('../img/adjusted-hero.jpg');
+    height: 775px;
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  section#hero div.title h1 {
+    color: #fff;
+    padding: .5em;
+    letter-spacing: 10px;
+    font-size: 1.5em;
     text-align: center;
     border: 5px solid #fff;
     display: inline;
   }
 
-section#logo{
-  height: 42em;
-}
+  .about-right {
+    padding-top: 0;
+  }
 
-section#contact .important-left {
-  padding-top: 2em;
-}
-
- footer{
-   height: 3em;
- }
+  #testimonial {
+    background: #f1f1f1;
+    height: 16em;
+    padding: 2em 0 1em 0;
+    /* text-align: center; */
+    /* margin-top: 40px; */
+  }
 }
