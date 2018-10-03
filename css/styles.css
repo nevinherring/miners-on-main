@@ -118,7 +118,7 @@ footer{
 
 @media (max-width: 600px) {
   section#hero {
-    background-image:url('../img/adjusted-hero.jpg');
+    background-image:url('../img/adjusted-hero.jpeg');
     height: 775px;
     position: relative;
     opacity: 0.80;
